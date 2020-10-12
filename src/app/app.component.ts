@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'angular-galary';
+  viewImg: string = "./../assets/second.jpg";
+  title = 'my-gallery';
+
+  onSelectImg(src: string): void {
+    this.viewImg = src;
+  }
 }

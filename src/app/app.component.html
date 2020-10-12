@@ -1,2 +1,3 @@
-<app-main-img></app-main-img>
-<app-prevues></app-prevues>
+
+  <app-view [mainImg]="viewImg"></app-view>
+  <app-preview (onClickImg)="onSelectImg($event)"></app-preview>
